@@ -92,4 +92,4 @@ const areBracketsBalanced_4 = (str) => {
 console.log(areBracketsBalanced('(((())())))'))
 console.log(areBracketsBalanced_2('(((())())))'))
 console.log(areBracketsBalanced_3('(((())())))'))
-console.log(areBracketsBalanced_4('(((())())))'))
+console.log(areBracketsBalanced_4('()'))
