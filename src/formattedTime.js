@@ -1,13 +1,11 @@
 /*
   Функция которая принимает на вход количество минут (прошедших с начала суток) и возвращает строку,
   являющуюся временем в формате чч:мм.
-  Мое решение.
 */
 
-import {
-	assert
-} from './myModules/myModules';
+import {	assert } from './myModules/myModules;
 
+// Моё решение
 const formattedTime1 = (num) => {
 	const hour = String(Math.floor(num / 60));
 	const timeInHour = hour.length > 1 ? hour : `0${hour}`;
@@ -19,7 +17,7 @@ const formattedTime1 = (num) => {
 
 };
 
-//Решение Хекслета
+// Решение Хекслета
 const formattedTime2 = (rawMinutes) => {
 	const hours = Math.floor(rawMinutes / 60);
 	const formattedHours = hours >= 10 ? hours : `0${hours}`;
