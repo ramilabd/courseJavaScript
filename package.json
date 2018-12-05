@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ram-smart/courseJavaScript#readme",
   "dependencies": {
     "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
   }
 }
