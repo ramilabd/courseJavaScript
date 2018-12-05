@@ -4,7 +4,8 @@
   "description": "\"Course Backend JS developer/node.js on Hexlet\"",
   "main": "tmp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "b-d": "npx babel-node"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "@babel/core": "^7.2.0",
     "@babel/node": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
     "jest": "^23.6.0"
   },
   "files": [
