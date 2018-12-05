@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ram-smart/courseJavaScript#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "@babel/preset-flow": "^7.0.0",
     "lodash": "^4.17.11"
   },
