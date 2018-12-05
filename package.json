@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ram-smart/courseJavaScript/issues"
   },
-  "homepage": "https://github.com/ram-smart/courseJavaScript#readme"
+  "homepage": "https://github.com/ram-smart/courseJavaScript#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
