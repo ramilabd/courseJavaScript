@@ -4,8 +4,7 @@
   "description": "\"Course Backend JS developer/node.js on Hexlet\"",
   "main": "tmp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "b-d": "npx babel-node"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
