@@ -3,7 +3,7 @@
   являющуюся временем в формате чч:мм.
 */
 
-import {	assert } from './myModules/myModules';
+import {	assert } from './myModules';
 
 // Моё решение
 const formattedTime1 = (num) => {
