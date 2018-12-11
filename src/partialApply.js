@@ -3,6 +3,7 @@
  Эта функция умеет частично применять один (второй) аргумент у переданной функции:
 */
 
+// Мое решение
 const partialApply = (func, arg2) => (arg1) => func(arg1, arg2);
 
 const pow = (a, b) => a ** b;
@@ -15,3 +16,6 @@ console.log(f1(10)); // => 100
 const f2 = partialApply((a, b) => a * b, 5);
 console.log(f2(2)); // => 10
 console.log(f2(5)); // => 25
+
+// Решение Хекслета
+// export default (f, second) => first => f(first, second);
