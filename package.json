@@ -19,6 +19,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-flow": "^7.0.0",
+    "hexlet-pairs": "^1.0.8",
+    "hexlet-pairs-data": "^1.0.8",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
