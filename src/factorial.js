@@ -2,7 +2,7 @@ const factorialRecursion = number => {
 	if (number === 0 || number === 1) {
 		return 1;
 	}
-	return number * factorial(number - 1);
+	return number * factorialRecursion(number - 1);
 };
 
 // Вычисление факториала с прменением итеративного процесса.
