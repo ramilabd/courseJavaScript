@@ -22,7 +22,8 @@
     "hexlet-html-tags": "^0.2.8",
     "hexlet-pairs": "^1.0.8",
     "hexlet-pairs-data": "^1.0.8",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "source-map-support": "^0.5.10"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
