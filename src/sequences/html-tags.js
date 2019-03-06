@@ -1,17 +1,38 @@
-import { cons, car, cdr, toString as pairToString} from 'hexlet-pairs';
+/*
+  Урок "Разметка" курса "JS: Последовательности"
+*/
+
+import { cons, car, cdr, toString as pairToString } from 'hexlet-pairs';
 import { l, isEmpty, head, tail, cons as consList, toString as listToString } from 'hexlet-pairs-data';
 
+// Мое решение
 const make = () => l();
-const node = (tag, content) => cons('<' + tag + '>' + content + '</' + tag + '>', make());
-const name = (pair) => car(pair);
-const value = (pair) => car(cdr(pair));
-const append = (list, pair) => cons(pair, list);
-const toString = (pair) => `${name(pair)}${name(value(pair))}${value(value(pair))}`;
+const node = (tag, content) => cons(tag, content);
+const value = (element) => cdr(element);
+const name = (element) => car(element);
+const append = (dom, element) => consList(element, dom);
+const toStringHtml = (elements) => {
+  let result = '';
+  while(isEmpty(elements) === false) {
+    result = `<${name(head(elements))}>${value(head(elements))}</${name(head(elements))}>` + result;
+    elements = tail(elements)
+  }
+  return result;
+};
 
+// Решение Хекслета (отличается только функция toString)
+const toString = (elements) => {
+  if (isEmpty(elements)) {
+    return '';
+  }
+  const element = head(elements);
+  const tag = name(element);
+  return `${toString(tail(elements))}<${tag}>${value(element)}</${tag}>`;
+};
 
-// const dom1 = make();
-// const dom2 = append(dom1, node('h1', 'hello, world'));
-// const dom3 = append(dom2, node('h2', 'header2'));
-
-const html = node('p', 'hello');
-console.log(toString(html));
+const html1 = make();
+const tag = node('div', 'HelloWorld!');
+const html2 = append(html1, tag);
+const tag2 = node('p', 'hexletlearn');
+const html3 = append(html2, tag2);
+console.log(toStringHtml(html3));
