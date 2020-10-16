@@ -1,8 +1,9 @@
 {
   "name": "coursejsdeveloper",
   "version": "1.0.0",
-  "description": "\"Course Backend JS developer/node.js on Hexlet\"",
-  "main": "tmp.js",
+  "type": "module",
+  "description": "\"Cources JS development on Hexlet\"",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,16 +23,21 @@
     "hexlet-html-tags": "^0.2.8",
     "hexlet-pairs": "^1.0.8",
     "hexlet-pairs-data": "^1.0.8",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.20",
     "source-map-support": "^0.5.10"
   },
   "devDependencies": {
-      "@babel/cli": "^7.2.0",
+    "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
     "@babel/node": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/register": "^7.0.0",
-    "jest": "^23.6.0"
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.5.3",
+    "jest-cli": "^26.5.3",
+    "prettier": "^2.1.2"
   },
   "files": [
     "dist"
